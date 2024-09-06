@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Handjet:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&display=swap');
+/*animcao */
+.texto {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 1.6s ease-in-out;
+  /*animacao */
+  flex: 1;
+  top:0;
+  text-align: left;
+  margin-top: -150px;
+  margin-left: 150px;
+  height: 200px;
+  width: 300px;
+  letter-spacing: 2px;
+}
+/* animção tabem */
+.texto.active{
+    opacity: 1;
+  transform: translateX(0);
+}
+body {
+    background-color: white; /* Cor de fundo da página */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+
+header {
+  padding: 2px;
+  margin: 0px;
+  height: 11%;
+  /* Remova a propriedade border e adicione as propriedades específicas para as bordas superior e inferior */
+  border-top: 1px solid #D3D3D3;
+  border-bottom: 1.7px solid #D3D3D3;
+  border-image: linear-gradient(to right, #011DDB, #9E09DB, #DB0867) 1 round;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  border-radius: 0px 0px 16px 16px;
+}
+
+h1{
+  font-family: "Josefin Sans";
+  margin: 9px;
+}
+h2{
+  font-family: "Archivo Black";
+  max-width: 400px
+}
+.logo{
+  margin: 3px;
+  width: 2%;
+  height: 36%;
+}
+button{
+    font-family: "Josefin Sans";
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: transparent; /* Cor de fundo do botão */
+    color: black; /* Cor do texto do botão */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+.pesquisa {
+    /* Estilo específico para o botão de pesquisa */
+    padding: 0.5rem 0.5rem; /* Espaçamento interno do botão */
+    background-color: none;
+    color: black;
+    font-size: 0.9rem; 
+}
+.pesquisa:hover {
+    /* Estilo quando o mouse passa por cima */
+    background-color: #DC2C87; /* Verde mais escuro */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.09); /* Aumenta ligeiramente o tamanho */
+}
+button:hover{
+    background-color: white;
+        /* Estilo quando o mouse passa por cima */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Aumenta ligeiramente o tamanho */
+}
+input{
+  border-color: #DC2C87;
+  border-radius: 20px;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer{
+  font-family: "Archivo Black";
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2F3136;
+  height: 60px;
+  border-radius: 16px 16px 0px 0px ;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+a{
+  color: white;
+}
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+}
+.legenda{
+  font-family: "Archivo Black";
+  font-size: 22px;
+}
+.titulo{
+  width: 90%;
+  color: white;
+  background-image: linear-gradient(to right, #011DDB, #9E09DB, #DB0867);
+  border-radius: 40px;
+  text-align: center;
+  padding: 0px 20px;
+}
+.textoia{
+  font-size: 18px;
+  font-family: "Josefin Sans";
+
+}
